@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "ttt-addon",
+	"version": "0.1.0",
+	"name": "TicTacToe Addon for Skyblocker",
+	"description": "SkyblockerのTic-Tac-Toeパズルソルバーの検知結果をフックし、拡張ポイントを提供するアドオン",
+	"authors": ["inari"],
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.inari.tttaddon.TttAddonMod"],
+		"themedgui:addon": ["com.inari.tttaddon.TttThemedGuiAddon"]
+	},
+	"mixins": ["ttt-addon.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.1",
+		"fabric-api": "*",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"skyblocker": ">=6.7.0-beta.1",
+		"themedgui": "*"
+	}
+}
